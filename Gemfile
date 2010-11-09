@@ -19,12 +19,19 @@ gem "haml", ">= 3.0.0"
 gem "bson"
 gem "bson_ext"
 
-group :development, :test do
-  gem 'webrat'
+group :development do
+  gem "haml-rails"
+  gem 'hpricot', '0.8.2'
+  gem 'ruby_parser', '2.0.5'
+end
+
+group :development,:test do
   gem "rspec-rails", ">= 2.0.1"
+end
+
+group :test do
   gem "cucumber-rails"
   gem "capybara"
-  gem "haml-rails"
   gem "less"
   gem "autotest"
   gem "shoulda"
