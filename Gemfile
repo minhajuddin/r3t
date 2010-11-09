@@ -18,6 +18,7 @@ end
 
 group :development,:test do
   gem "rspec-rails", ">= 2.0.1"
+  gem "factory_girl_rails"
 end
 
 group :test do
@@ -25,7 +26,6 @@ group :test do
   gem "capybara"
   gem "autotest"
   gem "shoulda"
-  gem "factory_girl_rails"
   gem "database_cleaner"
   gem "test_notifier"
 end
