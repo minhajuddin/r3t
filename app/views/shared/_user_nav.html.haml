@@ -1,0 +1,9 @@
+#navigation{:style => 'text-align:right;'}
+  -if current_user
+    =link_to 'Log Off', :destroy_user_session
+    |
+    =link_to 'Change Password', :edit_user_password
+  -else
+    =link_to 'Log On', :new_user_session
+    |
+    =link_to 'Sign Up', :new_user_registration

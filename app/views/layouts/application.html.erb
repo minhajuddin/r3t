@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lite</title>
+    <title>Lite Template</title>
     <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
     <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
     <%= javascript_include_tag :defaults %>
@@ -11,41 +11,23 @@
     <![endif]-->
   </head>
   <body>
-
-    <!--<p class="notice"><%= notice %></p>-->
-    <!--<p class="alert"><%= alert %></p>-->
     <div class="container">
-      <h1>Lite Template</h1>
+      <div id='header'>
+        <div id='logo' class='span-14'>
+          <h1>Lite Template</h1>
+        </div>
+        <%= render :partial => 'shared/user_nav' %>
+      </div>
       <hr>
       <h2 class="alt">Get your rails project started!</h2>
-
       <hr>
+      <%= render :partial => 'shared/messages' %>
       <hr class="space">
-        <%= yield %>
+      <%= yield %>
       <hr>
       <p>
         Cosmicvent Software &copy; 2010
       </p>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>

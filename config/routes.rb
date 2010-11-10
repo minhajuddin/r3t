@@ -1,21 +1,6 @@
 Lite::Application.routes.draw do
-  get "users/index"
-
-  get "users/new"
-
-  get "users/create"
-
-  get "users/edit"
-
-  get "users/update"
-
-  get "users/destroy"
-
-  #resources :posts
-
-  #match "home/index"
-
   devise_for :users
+  resources :users, :only => 'index'
 
   root :to => "home#index"
   # The priority is based upon order of creation:
