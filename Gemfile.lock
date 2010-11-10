@@ -35,6 +35,7 @@ GEM
     bson (1.1.1)
     bson_ext (1.1.1)
     builder (2.1.2)
+    cancan (1.4.0)
     capistrano (2.5.19)
       highline
       net-scp (>= 1.0.0)
@@ -184,6 +185,7 @@ DEPENDENCIES
   autotest
   bson
   bson_ext
+  cancan
   capistrano
   capybara
   cucumber

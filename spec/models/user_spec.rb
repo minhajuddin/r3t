@@ -9,4 +9,16 @@ describe User do
   end
 
   it { should validate_presence_of(:name) }
+
+  describe "#role?" do
+    it "should return true if the user has a role" do
+      user = User.new(:role => 'admin')
+      puts user.role?('admin')
+      user.role?('admin').should be_true
+    end
+    #it "should return true if the user has a role" do
+      #user = User.new(:role => 'admin')
+      #user.role?('admin').should be_true
+    #end
+  end
 end

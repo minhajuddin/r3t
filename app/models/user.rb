@@ -7,8 +7,15 @@ class User
 
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :role
 
   field :name
+  field :role
+
   validates :name, :presence => true
+
+  def role?(input_role)
+    self.role == input_role
+  end
+
 end

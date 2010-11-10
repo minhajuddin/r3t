@@ -5,6 +5,7 @@ gem 'unicorn'
 gem 'capistrano'
 gem "mongoid", ">= 2.0.0.beta.19"
 gem "devise"
+gem 'cancan'
 gem "haml", ">= 3.0.0"
 gem "bson"
 gem "bson_ext"

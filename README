@@ -1,3 +1,8 @@
+Lite Template
+===========
+  To run features and specs using autotest run `AUTOFEATURE=true bundle exec
+  autotest`
+
 TODO
 ====
   - add can can etc,
