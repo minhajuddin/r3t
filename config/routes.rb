@@ -1,5 +1,7 @@
 Lite::Application.routes.draw do
-  match "home/index"
+  #resources :posts
+
+  #match "home/index"
 
   devise_for :users
 

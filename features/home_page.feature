@@ -3,6 +3,6 @@ Feature: Home page features
   As a user
   I want to view the home page
 
-  Scenario: View home page
-    When I am on the home_index
+  Scenario: See search prompt
+    Given I am on the home page
     Then I should see "Lite Template"

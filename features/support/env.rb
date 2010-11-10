@@ -50,9 +50,9 @@ ActionController::Base.allow_rescue = false
 #Cucumber::Rails::World.use_transactional_fixtures = false
 # How to clean your database when transactions are turned off. See
 # http://github.com/bmabey/database_cleaner for more info.
-Before do
-  Mongoid.master.collections.each(&:drop)
-end
+#Before do
+  #Mongoid.master.collections.each(&:drop)
+#end
 
 #if defined?(ActiveRecord::Base)
   #begin
