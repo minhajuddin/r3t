@@ -1,0 +1,13 @@
+%h1 Users
+%table
+  %tr
+    %th Name
+    %th UserName
+    %th Actions
+  -@users.each do |u|
+    %tr
+      %td=u.name
+      %td=u.email
+      %td
+        %a{:href => '#'} Edit
+        %a{:href => '#'} Destroy
