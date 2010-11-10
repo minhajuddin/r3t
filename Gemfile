@@ -18,6 +18,7 @@ group :development do
 end
 
 group :development,:test do
+  gem 'spork', '>=0.9.0.rc2'
 end
 
 group :test do
@@ -29,7 +30,6 @@ group :test do
   gem "database_cleaner"
   gem "test_notifier"
   gem 'rspec', '2.0.1'
-  gem 'spork'
 end
 
 # To use debugger

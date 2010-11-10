@@ -1,3 +1,7 @@
 TODO
 ====
   - add can can etc,
+  - add database cleaner
+  - add seed file
+  - add basic layout
+  - add a few specs and cucumber features
