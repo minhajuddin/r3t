@@ -7,8 +7,8 @@ class User
 
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation
 
   field :name
-  validates_presence_of :name
+  validates :name, :presence => true
 end

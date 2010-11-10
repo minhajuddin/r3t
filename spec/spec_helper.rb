@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'spork'
+require 'shoulda'
+require 'database_cleaner'
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
@@ -27,6 +29,23 @@ Spork.prefork do
     # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
     #config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+    config.include Devise::TestHelpers, :type => :controller
+
+    DatabaseCleaner.strategy = :truncation
+
+    config.before(:suite) do
+      DatabaseCleaner.clean_with(:truncation)
+    end
+
+    config.before(:each) do
+      DatabaseCleaner.start
+    end
+
+    config.after(:each) do
+      DatabaseCleaner.clean
+    end
+
+    # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
     # If you're not using ActiveRecord, or you'd prefer not to run each of your
     # examples within a transaction, remove the following line or assign false
     # instead of true.
@@ -37,7 +56,6 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-  require 'shoulda'
   require 'shoulda/integrations/rspec2'
 end
 
