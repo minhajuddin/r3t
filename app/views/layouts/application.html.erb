@@ -2,16 +2,50 @@
 <html>
   <head>
     <title>Lite</title>
-    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <!--<p class="notice"><%= notice %></p>-->
+    <!--<p class="alert"><%= alert %></p>-->
+    <div class="container">
+      <h1>Lite Template</h1>
+      <hr>
+      <h2 class="alt">Get your rails project started!</h2>
+
+      <hr>
+      <hr class="space">
+        <%= yield %>
+      <hr>
+      <p>
+        Cosmicvent Software &copy; 2010
+      </p>
+
+    </div>
 
 
-    <%= yield %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
