@@ -25,11 +25,13 @@ group :test do
   gem "factory_girl_rails"
   gem "autotest"
   gem "cucumber-rails"
+  gem 'cucumber'
   gem "capybara"
   gem "shoulda"
   gem "database_cleaner"
   gem "test_notifier"
   gem 'rspec', '2.0.1'
+  gem 'launchy' 
 end
 
 # To use debugger
