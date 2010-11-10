@@ -14,20 +14,22 @@ group :development do
   gem 'hpricot', '0.8.2'
   gem 'ruby_parser', '2.0.5'
   gem "less"
+  gem "rspec-rails", ">= 2.0.1"
 end
 
 group :development,:test do
-  gem "rspec-rails", ">= 2.0.1"
-  gem "factory_girl_rails"
 end
 
 group :test do
+  gem "factory_girl_rails"
+  gem "autotest"
   gem "cucumber-rails"
   gem "capybara"
-  gem "autotest"
   gem "shoulda"
   gem "database_cleaner"
   gem "test_notifier"
+  gem 'rspec', '2.0.1'
+  gem 'spork'
 end
 
 # To use debugger
