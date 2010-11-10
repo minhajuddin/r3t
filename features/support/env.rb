@@ -53,7 +53,9 @@ ActionController::Base.allow_rescue = false
 #Before do
   #Mongoid.master.collections.each(&:drop)
 #end
-
+Before do
+  Mongoid.master.collections.reject { |c| c.name == 'system.indexes'}.each(&:drop)
+end
 #if defined?(ActiveRecord::Base)
   #begin
     #require 'database_cleaner'
