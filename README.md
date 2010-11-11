@@ -24,3 +24,8 @@ Wiredup Gems
     gem 'launchy' 
     gem 'spork' 
 
+
+Screenshot
+---------
+![r3t Rails Template Screenshot][1]
+  [1]: http://i.imgur.com/jmalM.jpg
