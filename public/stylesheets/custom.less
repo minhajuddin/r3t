@@ -1,0 +1,35 @@
+@dark_bg: #416AAF;
+@light_bg: #E2F1FA;
+
+#header,#footer {
+  background-color: @dark_bg;
+  color: @light_bg;
+  h1,h2,a{
+  color:@light_bg;
+  }
+}
+
+.rounded_corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+#header, #footer {
+  .rounded_corners(5px);
+}
+#content{
+  background-color: @light_bg;
+  .rounded_corners(5px);
+}
+
+#logo, #navigation{
+  padding:10px;
+}
+#footer{
+  padding:10px;
+}
+
+.error, .notice, .alert{
+  .rounded_corners(5px);
+}
