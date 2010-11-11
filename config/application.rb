@@ -47,7 +47,7 @@ module Lite
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w()
+    config.action_view.javascript_expansions[:defaults] = %w( application jquery-1.4.3.min.js jquery-ui-1.8.6.custom.min )
 
     config.generators do |g|
       g.orm :mongoid
