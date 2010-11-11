@@ -1,4 +1,4 @@
-Lite Template
+r3t
 ===========
   A Rails 3 Template wired-up with **rspec, cucumber, devise, mongoid, cancan
   haml, shoulda, factory girl, spork, capybara, database cleaner and autotest**

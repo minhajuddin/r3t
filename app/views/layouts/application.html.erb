@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lite Template</title>
+    <title>r3t</title>
     <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
     <%= stylesheet_link_tag 'custom', :media => 'screen' %>
     <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
@@ -17,11 +17,12 @@
       <div id='header' class='span-24 last'>
         <div id='logo' class='span-14'>
           <h1>
-            <a href='/'>Lite Template</a>
+            <a href='/'>r3t</a>
           </h1>
         </div>
         <%= render :partial => 'shared/user_nav' %>
       </div>
+      <hr class="space">
       <%= render :partial => 'shared/messages' %>
       <hr class="space">
       <div id='content' class='span-24 last'>
@@ -29,7 +30,9 @@
       </div>
       <hr class='space'>
       <div id='footer'>
-        Cosmicvent Software &copy; 2010
+        <a href='http://cosmicvent.com' title='Cosmicvent Software'>
+          Cosmicvent Software &copy; 2010
+        </a>
       </div>
     </div>
   </body>
