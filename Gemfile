@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '>=3.0.6'
 gem 'unicorn'
 gem 'capistrano'
-gem "mongoid", ">= 2.0.0.beta.19"
+gem "mongoid", ">=2.0.1"
 gem "devise"
 gem 'cancan'
 gem "haml", ">= 3.0.0"
@@ -12,10 +12,10 @@ gem "bson_ext"
 
 group :development do
   gem "haml-rails"
-  gem 'hpricot', '0.8.2'
-  gem 'ruby_parser', '2.0.5'
+  gem 'hpricot', '>=0.8.2'
+  gem 'ruby_parser', '>=2.0.5'
   gem "less"
-  gem "rspec-rails", ">= 2.0.1"
+  gem "rspec-rails", ">= 2.5.0"
 end
 
 group :development,:test do
@@ -31,7 +31,7 @@ group :test do
   gem "shoulda"
   gem "database_cleaner"
   gem "test_notifier"
-  gem 'rspec', '2.0.1'
+  gem 'rspec', '>=2.5.0'
   gem 'launchy' 
 end
 
